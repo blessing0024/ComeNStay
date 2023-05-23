@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0,  0.3)), url(images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.register-btn{
+    background: white;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 22%;
+}
+
+.search-bar{
+    background: #fff;
+    width: 80%;
+    margin: 30px auto;
+    padding: 6px 30px 6px 30px;
+    border-radius: 40px;
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-bar form button{
+    background: #888;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+
+.location-input{
+    flex: 1;
+}
+
+.search-bar form label{
+    font-weight: 600;
+}
+
+
+
+        /* EXCLUSIVES */
+
+ 
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusives div{
+    position: relative;
+}
+
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+
+ /* EXCLUSIVES */
+
+
+ .trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+ }
+
+ .trending div img{
+    width: 100%;
+    border-radius: 20px;
+ }
+
+
+ .trending h3{
+    font-weight: 600;
+    margin-top: 10px;
+ }
+
+
+        /* CTA */
+
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.cta-btn{
+    background: #888;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* Travellers Stories */
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+
+.stories p{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.start-btn{
+    background: #888;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* Our Amazing Story */
+
+.about-us{
+    text-align: center;
+    margin: 80px;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-us h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+
+    /* FOOTER */
+
+    .footer{
+        margin: 80px 0 10px;
+        text-align: center;
+    }
+
+    .footer a{
+        text-decoration: none;
+        color: #999;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+.footer hr{
+    background: #999;
+    height: 2px;
+    width: 100%;
+    border: 0;
+    margin: 10px;
+}
+
+.footer p{
+text-align: center;
+color: #000;
+}
+
