@@ -37,6 +37,14 @@ nav{
     color: white;
 }
 
+.nav-links li a:hover{
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    transition: 1s;
+    padding: 6px 15px;
+}
+
 .register-btn{
     background: white;
     color: #000;
@@ -44,6 +52,12 @@ nav{
     text-decoration: none;
     border-radius: 20px;
     font-size: 14px;
+}
+
+.register-btn:hover{
+    transform: translate(-4%, -5%);
+    transition: 1s;
+    border-radius: 0;
 }
 
 .container{
@@ -196,6 +210,12 @@ nav{
     display: inline-block;
 }
 
+.cta-btn:hover{
+    transform: translate(-4%, -5%);
+    transition: 1s;
+    border-radius: 0;
+}
+
 
 /* Travellers Stories */
 
@@ -209,6 +229,7 @@ nav{
 .stories div img{
     width: 100%;
     border-radius: 15px;
+    box-shadow: #999;
 }
 
 .stories div{
@@ -235,6 +256,12 @@ nav{
     border-radius: 20px;
     margin-top: 20px;
     display: inline-block;
+}
+
+.start-btn:hover{
+    transform: translate(-4%, -5%);
+    transition: 1s;
+    border-radius: 0;
 }
 
 
@@ -280,5 +307,141 @@ nav{
 .footer p{
 text-align: center;
 color: #000;
+}
+
+
+
+.active{
+    position: relative;
+}
+
+
+.active::after{
+    content: '';
+    background: #fff;
+    width: 27px;
+    position: absolute;
+    left: 50%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    bottom: -10px;
+    height: 2px;
+}
+
+/* nav .fa-solid fa-bars{
+    display: block;
+} */
+
+
+nav .fa-bars {
+    display: none;
+}
+
+
+/* SMALL SREEN STYLING */
+
+
+@media only screen and (max-width: 700px){
+
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+    }
+
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+
+    nav .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #fff;
+        font-size: 28px;
+    }
+
+
+
+
+    .active::after{
+        left: -45px;
+        transform: translate(0, 50%);
+        bottom: -10px;
+    }
+
+    .hidemenu{
+        max-height: 300px;
+    }
+
+
+    .header h1{
+        padding-top: 300px;
+        font-size: 7vw;
+    }
+
+
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .search-bar form{
+        display: block;
+    }
+
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+
+    }
+
+    .sub-title{
+        font-size: 6vw;
+    }
+
+    .cta{
+        padding: 15% 5%;
+    }
+
+    .cta h3{
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+
+
 }
 
