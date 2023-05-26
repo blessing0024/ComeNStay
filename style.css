@@ -19,6 +19,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px 7%;
+    background: #888;
 }
 
 .logo{
@@ -442,6 +443,108 @@ nav .fa-bars {
         line-height: 8vw;
     }
 
+    .cta p{
+        font-size: 15px;
+    }
+
+    .cta-btn{
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 15px;
+
+    }
+
+    .stories p{
+        font-size: 22px;
+
+    }
+
+    .about-us{
+        font-size: 15px;
+    }
 
 }
 
+
+
+
+            /* THIS IS THE LISTING SECTION */
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+    background: #888;
+}
+
+.navbar-list{
+background: #fff;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-list .nav-links li a{
+    color: #000;
+}
+
+.navbar-list .register-btn{
+    color: #fff;
+    background: #888;
+}
+
+nav.navbar-list .fa-bars{
+    color: #888;
+}
+
+.navbar-list .active::after{
+    background: #333;
+}
+
+
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+}
+
+.right-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 2px solid #ccc;
+}
+
+.house-img{
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+    
+}
+
+.house-img img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.house-info h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
